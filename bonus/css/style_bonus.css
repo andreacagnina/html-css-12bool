@@ -3,15 +3,19 @@ body {
 }
 
 header {
-    border: 10px inset #ffffff;
-    font-family: 'ArcadeClassic', sans-serif;
-    /* text-align: center; */
-
+    border: 20px inset #ffffff;
+    font-family: 'Arcade Normal', sans-serif;
 }
 
 main {
     background-color: black;
     padding: 50px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container.main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .flex {
@@ -23,9 +27,12 @@ main {
     justify-content: space-between;
 }
 
-.container-main {
-    max-width: 1200px;
-    margin: 0 auto;
+.j-center {
+    justify-content: center;
+}
+
+.super {
+    vertical-align: super;
 }
 
 .bg-red {
@@ -33,32 +40,51 @@ main {
 }
 
 .score {
-    width: 300px;
     background-color: black;
     color: red;
-
+    border: 1px double white;
+    padding: 5px 20px 0 20px;
 }
 
 .container {
     background-color: #cccccc;
+    text-align: center;
 }
 
-.hamb-menu {
+.content.hamb-menu {
     border: 20px outset #ffffff;
-    background-color: red;
     width: 100px;
     height: 100px;
 }
 
-
-.debug {
-    background-color: aqua;
-    border: 1px solid rgb(212, 11, 11);
-
+.container.main {
+    border: 10px outset orange;
 }
 
-.container-main.debug {
-    background-color: blue;
-    border: 6px outset yellow;
+.content {
+    border: 1px solid black;
     height: 100%;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.outset {
+    border: 20px outset #ffffff;
+}
+
+@media screen and (max-width: 770px) {
+    .score {
+        display: none;
+    }
+
 }
