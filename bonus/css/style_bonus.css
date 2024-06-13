@@ -1,0 +1,64 @@
+body {
+    font-size: 4em;
+}
+
+header {
+    border: 10px inset #ffffff;
+    font-family: 'ArcadeClassic', sans-serif;
+    /* text-align: center; */
+
+}
+
+main {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.j-btw {
+    justify-content: space-between;
+}
+
+.container-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.score {
+    width: 300px;
+    background-color: black;
+    color: red;
+
+}
+
+.container {
+    background-color: #cccccc;
+}
+
+.hamb-menu {
+    border: 20px outset #ffffff;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+
+.debug {
+    background-color: aqua;
+    border: 1px solid rgb(212, 11, 11);
+
+}
+
+.container-main.debug {
+    background-color: blue;
+    border: 6px outset yellow;
+    height: 100%;
+}
