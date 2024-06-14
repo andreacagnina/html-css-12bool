@@ -13,7 +13,8 @@
 .col-1 {
     flex-basis: calc((100% / 12) * 1);
     max-width: calc((100% / 12) * 1);
-    height: 98px;
+    /* height: 98px; */
+    aspect-ratio: 1 / 1;
 }
 
 .col-2 {

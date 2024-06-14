@@ -1,5 +1,5 @@
 body {
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 header {
@@ -23,17 +23,12 @@ main {
     align-items: center;
 }
 
-.j-btw {
-    justify-content: space-between;
-}
 
 .j-center {
     justify-content: center;
 }
 
-.super {
-    vertical-align: super;
-}
+
 
 .bg-red {
     background-color: red;
@@ -53,8 +48,6 @@ main {
 
 .content.hamb-menu {
     border: 20px outset #ffffff;
-    width: 100px;
-    height: 100px;
 }
 
 .container.main {
@@ -64,6 +57,10 @@ main {
 .content {
     border: 1px solid black;
     height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .green {
@@ -82,9 +79,74 @@ main {
     border: 20px outset #ffffff;
 }
 
-@media screen and (max-width: 770px) {
+
+@media screen and (min-width: 794px) and (max-width: 1200px) {
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    .content.hamb-menu {
+        border: 15px outset #ffffff;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 794px) {
     .score {
         display: none;
     }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    main {
+        font-size: 2rem;
+    }
+
+
+    .content.hamb-menu {
+        border: 10px outset #ffffff;
+    }
+
+    .outset {
+        border: 15px outset #ffffff;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .none {
+        display: none;
+    }
+
+    header {
+        font-size: 3rem;
+    }
+
+    main {
+        font-size: 3rem;
+    }
+
+
+    .content.hamb-menu {
+        border: 5px outset #ffffff;
+    }
+
+    .outset {
+        border: 15px outset #ffffff;
+    }
+
 
 }
